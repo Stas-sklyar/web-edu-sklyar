@@ -1,0 +1,41 @@
+.ModalWindow {
+
+
+    &-Box {
+        width: 500px;
+        min-height: 300px;
+        background-color: #fff;
+        outline: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        text-align: center;
+
+        @media screen and (max-width: 560px) {
+            width: 300px;
+        }
+    }
+
+    &-CloseIcon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    &-Title {
+        text-align: center;
+
+        @media screen and (max-width: 560px) {
+            font-size: 22px;
+            line-height: 110%;
+        }
+    }
+
+    &-Input {
+        margin: 15px 0;
+    }
+
+}
